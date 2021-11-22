@@ -43,7 +43,7 @@ class PIDController(object):
     def set_delay(self, delay):
         '''
         @param delay: delay in number of steps
-        '''
+        ''' 
         self.y = deque(self.y, delay + 1)
 
     def control(self, target, sensor):
